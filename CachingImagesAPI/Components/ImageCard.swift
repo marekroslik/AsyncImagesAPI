@@ -15,9 +15,9 @@ struct ImageCard: View {
             AsyncImage(url: URL(string: image.src.medium)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
-                
                     .scaledToFill()
                     .frame(width: 160, height: 250)
+                    .clipped()
             } placeholder: {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))

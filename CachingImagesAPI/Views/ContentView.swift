@@ -33,7 +33,7 @@ struct ContentView: View {
             
             HStack() {
                 ForEach(Query.allCases, id: \.self) { searchQuery in
-                    QueryTag(query: searchQuery, isSelected: false)
+                    QueryTag(query: searchQuery, isSelected: apiManager.selectedQuery == searchQuery)
                         .onTapGesture {
                             apiManager.selectedQuery = searchQuery
                         }

@@ -29,7 +29,7 @@ enum Query: String, CaseIterable {
     
     func findImages(topic: Query) async {
         do {
-            guard let url = URL(string: "https://api.pexels.com/v1/search?query=\(topic))&per_page=20&orientation=portrait")
+            guard let url = URL(string: "https://api.pexels.com/v1/search?query=\(topic))&per_page=100&orientation=portrait")
             else {fatalError("Missing URL") }
             
             var urlRequest = URLRequest(url: url)
@@ -82,9 +82,4 @@ struct Photo: Identifiable, Decodable {
         var landscape: String
         var tiny: String
     }
-    
 }
-
-
-
-

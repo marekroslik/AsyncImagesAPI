@@ -13,8 +13,7 @@ struct QueryTag: View {
     
     var body: some View {
         Text(query.rawValue.uppercased())
-            .font(.caption2)
-            .foregroundColor(.black)
+            .font(.caption)
             .bold()
             .foregroundColor(isSelected ? .black : .gray)
             .padding(10)

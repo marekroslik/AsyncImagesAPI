@@ -15,12 +15,13 @@ struct ImageCard: View {
             AsyncImage(url: URL(string: image.src.medium)) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
+                
+                    .scaledToFill()
                     .frame(width: 160, height: 250)
             } placeholder: {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
-                            .shadow(color: .white, radius: 30)
-                            .frame(width: 160, height: 250)
+                    .frame(width: 160, height: 250)
             }        }
     }
 }

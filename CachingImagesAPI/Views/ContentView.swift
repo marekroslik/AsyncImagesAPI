@@ -8,21 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var apiManager = APIManager()
+    
+    
     var body: some View {
         VStack {
-            
-            ScrollView() {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 160))], spacing: 0) {
-                    ForEach (1...8, id: \.self) { index in
-                        ImageCard(image: previewResponseBody.photos[0])
-                    }
+            if apiManager.images.isEmpty {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
+                ScrollView() {
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 160))], spacing: 10) {
+                            ForEach (apiManager.images, id: \.id) { image in
+                                ImageCard(image: image)
+                            }
+                        }
+                        .padding(0)
+                
+                    
                 }
-                .padding(0)
+                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity)
+            
             HStack() {
                 ForEach(Query.allCases, id: \.self) { searchQuery in
                     QueryTag(query: searchQuery, isSelected: false)
+                        .onTapGesture {
+                            apiManager.selectedQuery = searchQuery
+                        }
                 }
             }
             .frame(maxWidth: .infinity)
@@ -35,6 +49,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F9D209CA27B6440C00B5DF6B /* CachingImagesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachingImagesAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D209CA27B6440C00B5DF6B /* AsyncImagesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncImagesAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D209CD27B6440C00B5DF6B /* CachingImagesAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingImagesAPIApp.swift; sourceTree = "<group>"; };
 		F9D209CF27B6440C00B5DF6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9D209D127B6440C00B5DF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		F9D209C127B6440C00B5DF6B = {
 			isa = PBXGroup;
 			children = (
-				F9D209CC27B6440C00B5DF6B /* CachingImagesAPI */,
+				F9D209CC27B6440C00B5DF6B /* AsyncImagesAPI */,
 				F9D209CB27B6440C00B5DF6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		F9D209CB27B6440C00B5DF6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F9D209CA27B6440C00B5DF6B /* CachingImagesAPI.app */,
+				F9D209CA27B6440C00B5DF6B /* AsyncImagesAPI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F9D209CC27B6440C00B5DF6B /* CachingImagesAPI */ = {
+		F9D209CC27B6440C00B5DF6B /* AsyncImagesAPI */ = {
 			isa = PBXGroup;
 			children = (
 				F9D209CD27B6440C00B5DF6B /* CachingImagesAPIApp.swift */,
@@ -68,7 +68,7 @@
 				F9D209D127B6440C00B5DF6B /* Assets.xcassets */,
 				F9D209D327B6440C00B5DF6B /* Preview Content */,
 			);
-			path = CachingImagesAPI;
+			path = AsyncImagesAPI;
 			sourceTree = "<group>";
 		};
 		F9D209D327B6440C00B5DF6B /* Preview Content */ = {
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F9D209C927B6440C00B5DF6B /* CachingImagesAPI */ = {
+		F9D209C927B6440C00B5DF6B /* AsyncImagesAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9D209D827B6440C00B5DF6B /* Build configuration list for PBXNativeTarget "CachingImagesAPI" */;
+			buildConfigurationList = F9D209D827B6440C00B5DF6B /* Build configuration list for PBXNativeTarget "AsyncImagesAPI" */;
 			buildPhases = (
 				F9D209C627B6440C00B5DF6B /* Sources */,
 				F9D209C727B6440C00B5DF6B /* Frameworks */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = CachingImagesAPI;
+			name = AsyncImagesAPI;
 			productName = CachingImagesAPI;
-			productReference = F9D209CA27B6440C00B5DF6B /* CachingImagesAPI.app */;
+			productReference = F9D209CA27B6440C00B5DF6B /* AsyncImagesAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F9D209C527B6440C00B5DF6B /* Build configuration list for PBXProject "CachingImagesAPI" */;
+			buildConfigurationList = F9D209C527B6440C00B5DF6B /* Build configuration list for PBXProject "AsyncImagesAPI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F9D209C927B6440C00B5DF6B /* CachingImagesAPI */,
+				F9D209C927B6440C00B5DF6B /* AsyncImagesAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CachingImagesAPI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AsyncImagesAPI/Preview Content\"";
 				DEVELOPMENT_TEAM = BM3524Q23U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -327,7 +327,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekRoslik.CachingImagesAPI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AsyncImagesAPI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CachingImagesAPI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AsyncImagesAPI/Preview Content\"";
 				DEVELOPMENT_TEAM = BM3524Q23U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -356,7 +356,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekRoslik.CachingImagesAPI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AsyncImagesAPI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F9D209C527B6440C00B5DF6B /* Build configuration list for PBXProject "CachingImagesAPI" */ = {
+		F9D209C527B6440C00B5DF6B /* Build configuration list for PBXProject "AsyncImagesAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9D209D627B6440C00B5DF6B /* Debug */,
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9D209D827B6440C00B5DF6B /* Build configuration list for PBXNativeTarget "CachingImagesAPI" */ = {
+		F9D209D827B6440C00B5DF6B /* Build configuration list for PBXNativeTarget "AsyncImagesAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9D209D927B6440C00B5DF6B /* Debug */,
